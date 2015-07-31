@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1348.17">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<script>
+  var jpURL = new Array(
+    "http://www.yahoo.co.jp",
+    "http://www.google.com",
+    "http://www.ricoh.co.jp"
+    );
+
+  //リンク先へジャンプさせる関数
+  function selectNavi(){
+    var num;
+
+    //何番目のoptionが選択されたかを調べる
+    num = document.navi.contents.selectedIndex;
+
+    //該当するリンク先へジャンプさせる
+    location.href = jpURL[num];
+  }
+
+</script>
+<form>
+  <select name="contents" onchange="selectNavi()">  
+</form>
+
+</body>
+</html>

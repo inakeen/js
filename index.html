@@ -1,6 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
+<script>
+  function jump(){
+    if(confirm("トップページに戻りますか？") == true)
+    //OKならTOPページにジャンプさせる
+    location.href = "http://www.google.com";
+  }
+</script>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
   <title></title>
@@ -11,17 +18,8 @@
   </style>
 </head>
 <body>
-<script>
-  function jump(){
-    if(confirm("トップページに戻りますか？") == true)
-    //OKならTOPページにジャンプさせる
-    location.href = "http://www.google.com";
-  }
-
-
-</script>
 <form>
-  <input type="button" name="link" value="TOPへ" onclick="jump()">  
+  <input type="button" name="link" value="TOPへ" onclick="jump()">
 </form>
 
 </body>

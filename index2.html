@@ -13,6 +13,7 @@
 <body>
 <script>
   var jpURL = new Array(
+    "",
     "http://www.yahoo.co.jp",
     "http://www.google.com",
     "http://www.ricoh.co.jp"
@@ -26,12 +27,13 @@
     num = document.navi.contents.selectedIndex;
 
     //該当するリンク先へジャンプさせる
-    location.href = jpURL[num];
+    if(num != 0)location.href = jpURL[num];
   }
 
 </script>
 <form name="navi">
   <select name="contents" onchange="selectNavi()">
+    <option>選んでよ！</option>
     <option>Yahoo!</option>
     <option>Google</option>
     <option>RICOH</option>

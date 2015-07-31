@@ -11,6 +11,18 @@
   </style>
 </head>
 <body>
-<p class="p1">ds</p>
+<script>
+  function jump(){
+    if(confirm("トップページに戻りますか？") == true)
+    //OKならTOPページにジャンプさせる
+    location.href = "http://www.google.com";
+  }
+
+
+</script>
+<form>
+  <input type="button" name="link" value="TOPへ" onclick="jump()">  
+</form>
+
 </body>
 </html>
